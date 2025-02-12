@@ -22,7 +22,10 @@
     "baseUrl": ".",
     "paths": {
       "@project/anchor": ["anchor/src"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@console/*": ["./src/app/console/_components/*"],
+      "@context": ["./src/contexts"],
+      "@context/*": ["./src/contexts/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.spec.ts", "**/*.tsx", ".next/types/**/*.ts"],
