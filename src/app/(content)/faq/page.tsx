@@ -75,7 +75,7 @@ const FAQItem: React.FC<FAQItemProps> = ({question, answer, relevancy, isOpen, t
                     }}/>
                     <div className="flex flex-wrap gap-2 mt-4">
                         {relevancy.map((role) => (
-                            <Badge key={role} variant="secondary" className="bg-purple-700/50 text-white">
+                            <Badge key={role} className="bg-purple-700/50 text-white">
                                 {roles[role].name}
                             </Badge>
                         ))}

@@ -67,8 +67,7 @@ export const RoleCard: React.FC<RoleCardProps> = ({role, isSelected, onClick, is
                         <Markdown className="text-white/90 leading-relaxed">{role.narrative}</Markdown>
                         <Link href={`/faq?role=${role.id}`} passHref>
                             <Button
-                                variant="outline"
-                                className="mt-4 bg-white/20 hover:bg-white/30 text-white"
+                                className="mt-4 bg-black hover:bg-black/50 text-white"
                                 onClick={(e) => {
                                     e.stopPropagation()
                                 }}

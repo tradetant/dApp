@@ -33,10 +33,10 @@ export function FloatingActionButton() {
                         initial={{opacity: 0, y: 20}}
                         animate={{opacity: 1, y: 0}}
                         exit={{opacity: 0, y: 20}}
-                        className="mb-2 space-y-2 flex flex-col md:flex-row items-center md:space-x-1"
+                        className="flex flex-col md:flex-row items-center max-md:space-y-2 md:space-x-1"
                     >
                         {socialLinks.map((link) => (
-                            <Button key={link.name} variant="outline" size="icon"
+                            <Button key={link.name} variant="secondary" size="icon"
                                     className="text-purple-600 hover:text-purple-700"
                                     asChild>
                                 <a href={link.url} target="_blank" rel="noopener noreferrer">
@@ -51,7 +51,7 @@ export function FloatingActionButton() {
             <Button
                 variant="secondary"
                 size="icon"
-                className="rounded-full h-12 w-12 text-white bg-purple-600 hover:bg-purple-700 md:ml-4"
+                className="rounded-full h-12 w-12 text-white bg-purple-600 hover:bg-purple-700 max-md:mt-4 md:ml-4"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <IconLink size={48} />

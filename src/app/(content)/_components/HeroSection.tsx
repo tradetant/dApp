@@ -23,7 +23,7 @@ export function HeroSection() {
             </video>
             <div className="absolute top-0 left-0 m-4 z-10">
                 <Link href={'https://paper.tradetant.com'}>
-                    <Button className="bg-white/10 hover:bg-white/20 text-white">Whitepaper</Button>
+                    <Button variant="outline" className="text-neutral-800 font-bold">Whitepaper</Button>
                 </Link>
             </div>
             <div className="absolute top-0 right-0 m-4 z-10">
